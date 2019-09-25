@@ -843,7 +843,7 @@ header img{
  		width: 25%;
  	}
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
 	.nav-mobile-burger{
 		margin: 26px 0px 0px 26px;
 	}
