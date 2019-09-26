@@ -5,21 +5,39 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="viewport" content="width=device-width; initial-scale=0.85; maximum-scale=0.85; user-scalable=0;" />
+	<meta name="viewport" content="width=device-width; initial-scale=0.85; maximum-scale=0.85; user-scalable=0;">
+	
+	
+	
 </head>
 <body>
-	<header>
+	<header id="header">
 		<img src="photo/header.png">
 		<div class="header-container">
 			<div class="header-container-box">
 				<div class="header-container-box-nav">
-					<div class="nav-mobile-burger">
-						<div class="nav-burger"></div>
+					<div class="burger-menu">
+						<a href="" class="burger-menu-bottom">
+							<span class="burger-menu-lines"></span>
+						</a>
+
+						<nav class="burger-menu-nav">
+							<a href="#header" class="burger-menu-link">Главная</a>
+							<a href="#advantages" class="burger-menu-link">Наши приемущества</a>
+							<a href="#services" class="burger-menu-link">Наши услуги</a>
+							<a href="#paintball" class="burger-menu-link">Пейнтбол</a>
+							<a href="#lasertag" class="burger-menu-link">Лазертаг</a>
+							<a href="#map" class="burger-menu-link">Карта</a>
+							<div class="burger-menu-link">+375 29 28 43 655</div>
+							
+						</nav>
+						<div class="burger-menu-overlay"></div>
 					</div>
 					<div class="nav-desctop">
-						<a href="">Наши услуги</a>
-						<a href="">Пейнтбол</a>
-						<a href="">Лазертаг</a>
+						<a href="#services">Наши услуги</a>
+						<a href="#paintball">Пейнтбол</a>
+						<a href="#lasertag">Лазертаг</a>
+						<a href="#map">Карта</a>
 					</div>
 				</div>
 				<div class="header-container-box-text">
@@ -35,7 +53,7 @@
 	</header>
 	<main>
 		<div class="our-benefits">
-			<div class="benefits-text">Наши приемущества</div>
+			<div class="benefits-text" id="advantages">Наши приемущества</div>
 			<div class="benefits-container">
 				<div class="benefits">
 					<img src="photo/sovremennoe.jpg">
@@ -64,7 +82,7 @@
 			</div>
 		</div>
 		<div class="our-services">
-			<div class="services-text">Наши услуги</div>
+			<div class="services-text" id="services">Наши услуги</div>
 			<div class="services-container">
 				<div class="services">
 					<img src="photo/arenda-base.jpg">
@@ -132,7 +150,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="product-container">
+		<div class="product-container" id="paintball">
 			<img src="photo/paintball-image-background-2.png">
 			<div class="product-box">
 				<div class="product-box-sli-left">
@@ -267,7 +285,7 @@
 			</div>
 			<div class="paintball-bonus-unit-text-so">*Скидки действуют при заказе игры на 10 и более игроков и не суммируются</div>
 		</div>
-		<div class="product-container">
+		<div class="product-container" id="lasertag">
 			<img src="photo/lazertag-image-background.png">
 			<div class="product-box">
 				<div class="product-box-sli-left">
@@ -342,7 +360,7 @@
 			</div>
 			<div class="paintball-bonus-unit-text-so">*Скидки действуют при заказе игры на 10 и более игроков и не суммируются</div>
 		</div>
-		<div class="local-container">
+		<div class="local-container" id="map">
 			<img src="photo/map.jpg">
 		</div>
 	</main>
@@ -370,5 +388,7 @@ VK.Widgets.Group("vk_groups", {mode: 3, width: "300"}, 146121587);
 		</div>
 	</footer>
 	<div class="maxmediagroup">© 2019 ЦАО "ВАЯР" Активный отдых г. Гомель. Все права защищены. Сайт создан MAXSTUDIOSTD</div>
+	<script src="jquery.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
